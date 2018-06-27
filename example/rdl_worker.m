@@ -21,7 +21,7 @@ my.dropout = dpt;
 my.iter = 1;
 do_pretrain = 1;
 %gpuDevice(gd);
-gpuDevice;
+%gpuDevice;
 
 my.save_lag = sl;
 my.sdae.n_epoch = nepo;

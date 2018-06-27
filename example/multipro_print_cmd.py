@@ -21,7 +21,7 @@ def worker(pline,tempfile,tmpsh):
             fw.write(tline)
     fw.close()
     
-    system('matlab -r -nojvm '+tmpsh.replace('.m',''))
+    print 'matlab -r -nojvm ' + tmpsh.replace('.m','')
 
 def multipro(tempfile,parafile,tmpsh):
     tlist = list()

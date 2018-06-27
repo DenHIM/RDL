@@ -13,7 +13,7 @@ my.weight_decay = 1e-4; % default is 1e-4
 my.dropout = 0.1;
 my.iter = 1;
 do_pretrain = 1;
-gpuDevice(2);
+%gpuDevice(2);
 
 my.sdae.n_epoch = 1000;
 my.dae.n_epoch = 1000;

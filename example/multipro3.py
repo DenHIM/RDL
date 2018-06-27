@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 from threading import Thread
 from os import system
 import thread
@@ -37,7 +37,7 @@ def multipro(tempfile,parafile,tmpsh):
     for i in range(numt):
         tlist[i].join()
     e = datetime.now()
-    print 'total time: ',str((e-b).seconds)
+    print ('total time: ',str((e-b).seconds))
     system('mv %s*.m tmpshs' % tmpsh)
 
 if __name__=='__main__':
